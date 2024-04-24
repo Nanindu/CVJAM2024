@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  background-color: black;
+  background-repeat: no-repeat;          
+  padding: 30px;
+  text-align: center;
+  color: white;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: green;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: white;
+  color: green;
+}
+
+#navbar a.active {
+  background-color: white;
+  color: green;
+}
+
+.content {
+  padding: 16px;
+  background-color: black;
+  color: white;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+#icoontjes {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+ul {
+  list-style-type: none;  
+}
+
+#verdwijn:hover {
+  color: black;  
+}
+
+.gallerij {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+    background-color: black;
+}
+
+.gallerij img {
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.gallerij::after {
+    content: "";
+    width: 350px;
+}
+
+.zoekFunktieNaam {
+  color: white;
+  
+  background-color: black;
+  margin-bottom: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+</style>
+</head>
+<body>
+  <div id="navbar">
+    <a class="active" href="#over-mij">
+      <p>Over Mij:</p>
+      <img id="icoontjes" src="overMijAfbeelding.png" />
+    </a>
+  
+    <a href="#afgeronde-projekten">
+      <p>Afgeronde Projekten:</p>
+      <img id="icoontjes" src="projectenIco.jpg"/>
+    </a>
+  
+    <a href="#werkplaats">
+      <p>Werkervaring:</p>
+      <img id="icoontjes" src="werkplaats.png"/>
+    </a>
+  
+    <a href="#behaalde-certificaties">
+      <p>Behaalde Certificaties</p>
+      <img id="icoontjes" src="certificaatIco.jpg"/>
+    </a>
+  
+    <a href="#contact">
+      <p>Contact Opnemen</p>
+      <img id="icoontjes" src="contactIco.png"/>
+    </a>
+  </div>
+
+
+
+<div class="header" id="over-mij">
+<h1>Geweldig dat je mijn pagina hebt bereikt!</h1>
+
+<ul>
+    <li> Je knop <em id="verdwijn"> verdwijnt </em> wanneer je er over heen gaat? </li>
+    <br>
+    <li>Je hebt <em id="bugs" onmouseover="buggyTekst()"> bugs </em> in je code?</li>  
+    <br>
+    <li>De websites moeten er degelijk uit komen te zien, en <em> snel! </em></li>
+    <br>
+    <li>Je zoekt een gemotiveerd en doelgericht persoon?</li>
+    <br>  
+</ul>
+
+<img src="groteFoto1.jpg" width="1250" height="750"/>
+
+<h2>
+Ik ben <b>David</b>, <em> geïntereseerd </em> in alles, en heel <em> gemotiveerd </em>
+om te <b>leren</b> en <b>werken</b> in het <em> software bereik!! </em>
+</h2>
+
+</div>
+
+
+
+
+
+
+<div class="content">
+  <div id="afgeronde-projekten">
+    <h1>Afgeronde Projekten</h1>
+    <div class="gallerij">
+      <a href="https://www.linkedin.com/in/drserikjacobs/">
+        <div class="zoekFunktieNaam">Linked in Pagina Erik Jacobs</div>
+        <img src="banierErik.jpg" />
+      </a>
+
+      <!-- <a href="https://www.rocvanflevoland.nl/MBO-onderwijs/Sectoren/ICT/softwaredeveloper">
+        <div class="zoekFunktieNaam">Software ontwikkeling opleiding</div>
+        <img src="https://yt3.ggpht.com/-Y0aVyTvhmXc/AAAAAAAAAAI/AAAAAAAAAAA/5PgTFZpK8A4/s900-c-k-no-mo-rj-c0xffffff/photo.jpg" />
+      </a> -->
+
+      <!-- <a href="">
+        <div class="zoekFunktieNaam"></div>
+        <img src="" />
+      </a> -->
+    </div>
+  </div>
+
+  <div id="werkplaats">
+    <h1>Vorige werkplaatsen</h1>
+    <ul> 
+      <li>Albert Heijn - 3 jaar</li>
+      <li>Markt - 1 jaar</li>
+      <li>Bouw - 2 jaar</li>
+      <li>Sushi Nippon - 0.5 jaar</li>
+    </ul>
+  </div>
+
+<div id="behaalde-certificaties">
+  <h1>Certificaties</h1>
+  <ul>
+    <li> Middelbare School diploma </li>
+    <ul> <br>
+      <li> 
+        Hier heb ik voor een groot deel geleerd hoe je met mensen 
+        om moet gaan, en hoe je jezelf moet verzorgen.    
+      </li>
+    </ul> 
+  </ul> 
+</div>
+
+  <div id="contact">
+    <h1>Contact opnemen kan hier!</h1>
+    <pre>
+      Zoek je een gemotiveerde jongen die:
+        -Nooit opgeeft
+        -De Basis van
+          -Javascript
+          -HTML
+          -& CSS beheerst
+        -Geïntereseerd is in alles
+      
+      Dan zou ik het graag willen horen ↓
+      </pre>
+
+    <a href="mailto:d.o.lelystad@hotmail.com">Dan is dit mijn Email adres:</a> 
+    <br>
+    <!-- <img src="Afbeelding van WhatsApp op 2023-12-18 om 15.05.43_2b677080.jpg" > -->
+  </div>
+  
+  <!-- 
+    Waarom je contact met me op moet nemen:
+    stagair
+
+    vaardigheden
+  -->
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<br>
+
+<br>
+<br>
+
+
+</div>
+
+<!-- 
+Inoud:
+
+1. Welkom op mijn site banier foto
+
+2. Dit ben ik 
+
+3. werkervaring en afgeronde projekten. 
+
+4. Certificaties
+
+5. contact opnemen en waarom het zich loont
+
+
+
+
+
+
+
+ -->
+
+<script>
+window.onscroll = function() {
+    myFunction()
+};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+function buggyTekst() {
+  document.getElementById("bugs").innerText = "sgub";
+}
+
+
+</script>
+
+</body>
+</html>
